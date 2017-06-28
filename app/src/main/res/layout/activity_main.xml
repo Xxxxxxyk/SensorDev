@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_lamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启闪光灯"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_finger"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"/>
+
+    <Button
+        android:id="@+id/btn_finger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指纹核验"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_lamp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hard_list"/>
+
+    <Button
+        android:id="@+id/btn_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/btn_finger"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hard_list"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/btn_shock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="震动"
+        app:layout_constraintLeft_toRightOf="@+id/btn_light"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hard_list"
+        android:layout_marginStart="5dp"/>
+
+    <Button
+        android:id="@+id/btn_hard_list"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="获取支持硬件列表"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <Button
+        android:id="@+id/btn_shake"
+        android:layout_width="368dp"
+        android:layout_height="52dp"
+        android:text="摇一摇"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hard_list"/>
+
+</android.support.constraint.ConstraintLayout>
